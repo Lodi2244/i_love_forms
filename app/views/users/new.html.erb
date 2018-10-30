@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome on our website !</h1>
+    <h2>Please login :</h2>
+    <nav>
+    <form class="form-inline" action="/users" method="post">
+
+    <%= form_tag "/users", method: "post" do %>
+      <span class="input-group-text" id="basic-addon1">Id : </span><input type="string" class="form-control" placeholder="Nickname123" aria-label="Username" aria-describedby="basic-addon1"><br><br>
+      <span class="input-group-text" id="basic-addon1"> @ : </span><input type="string" class="form-control" placeholder="example@email.com" aria-label="Email" aria-describedby="basic-addon1"><br><br>
+      <span class="input-group-text" id="basic-addon1"> About you : </span><input type="string" class="form-control" placeholder="My name is..." aria-label="Bio" aria-describedby="basic-addon1" size= "50x10"><br><br>
+      <%= submit_tag("Add user") %>
+    <% end %>
+
+    <br><br>
+
+    <%= form_for @user, url: {action: "create"} do |f| %>
+      <%= label_tag "Username" %>
+      <%= f.text_field :user_name %><br><br>
+      <%= label_tag "Email" %>
+      <%= f.text_field :email %><br><br>
+      <%= label_tag "Bio" %>
+      <%= f.text_area :bio, size: "50x10" %>
+      <%= f.submit "Create" %>
+    <% end %>
+
+    </form>
+    </nav>
+  </body>
+</html>
