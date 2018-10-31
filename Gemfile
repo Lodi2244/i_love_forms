@@ -9,7 +9,6 @@ gem 'faker', '~> 1.9.1'
 gem 'rails', '~> 5.2.1'
 # Use postgresql as the database for Active Record
 #group :development, :test do
-  gem 'sqlite3'
 #end
 
 #group :production do
