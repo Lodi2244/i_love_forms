@@ -10,6 +10,6 @@ To do so just enter the usual :
 
 * ``rails server``
 
-* ==> Production link : https://agile-plateau-24596.herokuapp.com
+* ==> Production link : https://agile-plateau-24596.herokuapp.com/users
 
 Have fun !
