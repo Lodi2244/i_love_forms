@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is for playing with forms.
+To do so just enter the usual :
 
-Things you may want to cover:
 
-* Ruby version
+* ``bundle install``
 
-* System dependencies
+* ``rake db:setup``
 
-* Configuration
+* ``rails server``
 
-* Database creation
+* ==> Production link : https://agile-plateau-24596.herokuapp.com
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Have fun !
